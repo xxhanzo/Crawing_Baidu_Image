@@ -64,13 +64,15 @@ def crawl_images():
     spider = BaiduImageSpider()
     image_links = spider.get_images(query, num_images)
 
-    # 手动构建响应字符串
-    response_str = "{\n"
+    # 构建所需的响应格式
+    response_list = []
     for key, value in image_links.items():
-        response_str += f'  "{key}": "{value}",\n'
-    response_str = response_str.rstrip(",\n") + "\n}"
+        response_list.append({
+            "Image_name": key,
+            "Image_url": value
+        })
 
-    return app.response_class(response=response_str, mimetype='application/json')
+    return jsonify(response_list)
 
 if __name__ == '__main__':
     print("Starting Flask server...")
