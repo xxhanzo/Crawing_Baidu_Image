@@ -48,7 +48,7 @@ pip install -r requirements.txt
 1. 在本地执行命令：
 
 ```Python
-curl -X POST http://127.0.0.1:8000/crawl_images -H "Content-Type: application/json" -d "{\"query\": \"溃坝\", \"num_images\":110}"
+curl -X POST http://127.0.0.1:8000/crawl_images -H "Content-Type: application/json" -d "{\"query\": \"溃坝\", \"num_images\":10}"
 ```
 
 1. 其中：
