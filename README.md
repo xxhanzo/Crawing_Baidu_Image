@@ -57,4 +57,5 @@ curl -X POST http://127.0.0.1:8000/crawl_images -H "Content-Type: application/js
    3. ``"{\"query\": \"溃坝\", \"num_images\": 10}"``中的``query``为要搜索的内容，``10`` 为要搜索的数量。
 2. 运行结果：
 
-![image](https://github.com/user-attachments/assets/2e7cf042-5ec9-48a4-b313-45b5fb92802e)
+![fa6a8c29eeaba70420d11d1a1f8d7cf](https://github.com/user-attachments/assets/8ed758d6-afe4-4ae7-aa85-2953edc983b6)
+
